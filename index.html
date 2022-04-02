@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="text-section">
+      <h2>Learn to code by watching others</h2>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="form-section">
+      <div class="text-box-top">
+        <p>Try it free 7 days then $20/mo. thereafter</p>
+      </div>
+      <form class="box-form" onsubmit="Submit(event)">
+        <div>
+          <div class="form-item">
+            <input type="text" class="border-normal" id="first-name" placeholder="First Name"/>
+            <span class="error-msg"></span>
+            <img class="icon-error" src="./images/icon-error.svg" alt="">
+          </div>
+          <div class="form-item my-10">
+            <input type="text" class="border-normal" id="last-name" placeholder="Last Name"/>
+            <span class="error-msg"></span>
+            <img class="icon-error" src="./images/icon-error.svg" alt="">
+          </div>
+          <div class="form-item my-10">
+            <input type="text" class="border-normal" id="email" placeholder="Email Address"/>
+            <span class="error-msg"></span>
+            <img class="icon-error" src="./images/icon-error.svg" alt="">
+            <!-- <span class="sample-email">email@example.com</span> -->
+          </div>
+          <div class="form-item">
+            <input type="password" class="border-normal" id="password" placeholder="Password"/>
+            <span class="error-msg"></span>
+            <img class="icon-error" src="./images/icon-error.svg" alt="">
+          </div>
+        </div>
+        <button class="btn-submit" type="submit">Claim your free trial</button>
+        <p class="text-bottom">By clicking the button, you are agreeing to our 
+          <a href="#">Terms and Services</a>
+        </p>    
+      </form>
+     </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
